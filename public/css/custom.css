@@ -1,0 +1,187 @@
+.invert {
+    filter: invert(100%);
+}
+
+.darken {
+    filter: brightness(50%);
+
+}
+
+.gray {
+    filter: grayscale(0.5);
+    filter: contrast(1.1);
+
+}
+
+.lighten {
+    filter: brightness(130%);
+}
+
+.image-cover {
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.center {
+    background-position: center center;
+    position: relative;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #ffda3e;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.center {
+    left: 50%;
+    margin-left: -25%;
+    top: 20%;
+}
+
+.parallax {
+    position: fixed;
+}
+
+.shadoww {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.486);
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("img_parallax.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("");
+    min-height: 40vh;
+}
+
+.bgimg-3 {
+    background-image: url("/public/assets/mountain.jpg");
+    min-height: 40vh;
+}
+
+
+.portfolio-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 1rem;
+  }
+  .portfolio-item .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .portfolio-item .caption .caption-content {
+    color: #fff;
+    margin: auto 2rem 2rem;
+  }
+  .portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  .portfolio-item .caption .caption-content p {
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  @media (min-width: 992px) {
+    .portfolio-item {
+      max-width: none;
+      margin: 0;
+    }
+    .portfolio-item .caption {
+      transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, background-color 0.7s;
+      transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(0px);
+              clip-path: inset(0px);
+    }
+    .portfolio-item .caption .caption-content {
+      transition: opacity 0.25s;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      margin-bottom: 5rem;
+    }
+    .portfolio-item img {
+      transition: -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(-1px);
+              clip-path: inset(-1px);
+    }
+    .portfolio-item:hover img {
+      -webkit-clip-path: inset(2rem);
+              clip-path: inset(2rem);
+    }
+    .portfolio-item:hover .caption {
+      background-color: rgba(23, 17, 110, 0.735);
+      -webkit-clip-path: inset(2rem);
+              clip-path: inset(2rem);
+    }
+  }
+
+
+  footer.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  footer.footer .social-link {
+    display: block;
+    text-decoration: none;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    background-color: #5a17b3;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  footer.footer .social-link:hover {
+    background-color: #291a73;
+    text-decoration: none;
+  }
+  
+
+  
+  #home-top-video:before {
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index:1;
+    background:linear-gradient(0deg, rgb(0, 0, 0) 10%, rgba(7, 7, 185, 0.244) 35%, rgb(0, 0, 0) 100%)
+  }
+  
+  #home-top-video {
+    left: 0%;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  

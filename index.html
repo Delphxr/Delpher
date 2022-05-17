@@ -8,81 +8,63 @@
     <meta name="author" content="" />
     <title>Delpher</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/icon.png" />
-    <!-- Google-->
-    <meta name="google-site-verification" content="6jvkjEAE_ZIszKZygG8-dOioXLZKzbYiOuLIoJkyxyM" />
-    <!-- Boostrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Simple line icons-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
         rel="stylesheet" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-        rel="stylesheet" type="text/css" />
+
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="/public/css/styles.css" rel="stylesheet" />
+    <link href="/public/css/custom.css" rel="stylesheet" />
+
 </head>
 
-<body id="page-top" style="background-color: #181b2e;">
-    <!-- Navigation-->
-    <a class="menu-toggle rounded" href="#"><i class="bi bi-list"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand"><a href="#page-top">Delpher</a></li>
-            <li class="sidebar-nav-item"><a href="#page-top">Inicio</a></li>
-            <li class="sidebar-nav-item"><a href="#about">Acerca de</a></li>
-            <li class="sidebar-nav-item"><a href="#portfolio">Portafolio</a></li>
-            <li class="sidebar-nav-item"><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+<body>
+
+
+
     <!-- Header-->
-    <header class="masthead d-flex align-items-center">
-        <div class="container px-4 px-lg-5 text-center">
-            <h1 class="mb-1 text-light">Delpher!</h1>
-            <h4 class="mb-5 text-white"><em>Desarrollador de videojuegos independiente y estudiante de ingeniería</em>
-                </h3>
-                <a class="btn btn-primary btn-xl" href="#portfolio">Descubrir!</a>
+    <header id="inicio">
+
+        <!-- Logo-->
+        <div class="" style="position: absolute;z-index: 1; width: 100%;">
+            <div class="text-center text-white" style=" object-fit: contain; padding: auto;">
+
+                <img class="" src="public/assets/logo png.png"
+                    style="width: 40%; object-fit: fill; vertical-align: -55vh;"></img>
+
+                <p class="lead fw-normal text-light mb-0 ">Desarrollador de videojuegos independiente y estudiante de
+                    ingeniería en Computación</p>
+            </div>
         </div>
+        <!-- video-->
+        <div id="home-top-video" style="height: 110vh; width: 100%; z-index: -2; position:fixed;">
+            <video class="image-cover gray" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"
+                style="height: 110vh; width: 100%; z-index: -2; position:fixed;">
+                <source src="public/assets/showcase/showcase.mp4" type="video/mp4">
+                <div class="darken"></div>
+            </video>
+        </div>
+
     </header>
-    <!-- About-->
-    <!--<section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                        <p class="lead mb-5">
-                            This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-                            <a href="https://unsplash.com/">Unsplash</a>
-                            !
-                        </p>
-                        <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+
+    <!-- para evitar overflow-->
+    <div style="height: 110vh; width: 100%;"></div>
 
 
-    <!-- Callout-->
-    <!-- <section class="callout">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mx-auto mb-5 text-light">
-                    Welcome to
-                    <em>your</em>
-                    next website!
-                </h2>
-                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
-            </div>
-        </section> -->
-    <!-- Portfolio-->
-    <section class="content-section" id="portfolio">
-        <div class="container px-4 px-lg-5">
-            <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">Portafolio</h3>
-                <h2 class="mb-5 text-light">Proyectos Recientes</h2>
-            </div>
+
+    <!-- Section juegos-->
+    <section class="content-section" id="portfolio" style="background-color:  #141417;">
+        <div class="container px-4 px-lg-5" style="padding-top: 30px; padding-bottom: 40px;">
+
             <div class="row gx-0">
 
-
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Videojuegos</h3>
+                    <h2 class="mb-5 text-light">Proyectos Recientes</h2>
+                </div>
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="#portfolio">
                         <div class="caption">
@@ -91,7 +73,7 @@
                                 <p class="mb-0">Juego para mobiles de un gatito que salta. EN PROGRESO</p>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/SlingCat.jpg" alt="..." />
+                        <img class="img-fluid " src="assets/img/SlingCat.jpg" alt="..." />
                     </a>
                 </div>
 
@@ -104,51 +86,154 @@
                                     "Joined Together"</p>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/Blots.jpg" alt="..." />
+                        <img class="img-fluid " src="/public/assets/blobs/mini.jpg" alt="..." />
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="https://delphergames.itch.io/starbust">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">StarBust</div>
+                                <p class="mb-0">Videojuego de estrategia por turnos, se controla a un trio de robots
+                                    mientras tratan de proteger el nucleo de su nave</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid " src="/public/assets/robozombies/mini.jpg" alt="..." />
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#portfolio">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">Mu: LieStash</div>
+                                <p class="mb-0">RPG de acción, generación de niveles procedural, consiste en tratar de
+                                    encontrar la salida que lleva al siguiente nivel. EN PROGRESO</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid " src="/public/assets/liestash/mini.jpg" alt="..." />
                     </a>
                 </div>
 
 
             </div>
         </div>
+
+
     </section>
 
 
-    
-    
- 
-    <!-- Call to Action-->
-    <section class="content-section bg-primary text-white">
-        <div class="container px-4 px-lg-5 text-left">
-            <h2 class="mb-4">"Imagination is more important than knowledge. Knowledge is limited. Imagination encircles
-                the world."</h2>
-            <h5> -Albert Einstein.</h5>
-        </div>
-        </section>
+    <div class="bgimg-2 darken"></div>
 
-        <!-- Footer-->
-        <footer class="footer text-center" id="contact">
-            <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
-                    <!-- Redes sociales-->
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://delphergames.itch.io/"><i
-                                class="bi bi-controller"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://github.com/Delpher57"><i
-                                class="icon-social-github"></i></a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Delpher 2022</p>
+
+    <!-- Section diseño -->
+    <section class="content-section" id="portfolio" style="background-color:  #141417;">
+        <div class="container px-4 px-lg-5" style="padding-top: 30px; padding-bottom: 40px;">
+
+            <div class="row gx-0">
+
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">FrontEnd Design</h3>
+                    <h2 class="mb-5 text-light">Proyectos Recientes</h2>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item"
+                        href="https://www.figma.com/proto/m1RA0NYf4yJ4gtbn7TjnT5/BitTask-WebPage?node-id=2%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=2%3A2">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">BitTask</div>
+                                <p class="mb-0">Sitio web de realización de Microtareas para estudiantes y empresas</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid " src="/public/assets/bittask/mini.png" alt="..." />
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <a class="portfolio-item"
+                        href="https://www.figma.com/proto/jaPM36h6yDoHkXPtvGFS5v/Administrador-de-Tareas?node-id=2%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=2%3A2">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">SmartTask</div>
+                                <p class="mb-0">Sitio web de Tabla de Kanban Colaborativa</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid " src="/public/assets/smartTask/mini.png" alt="..." />
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <a class="portfolio-item"
+                        href="https://www.figma.com/proto/juXldWVzBlKg4vMsJwMqAR/CherryGames?node-id=2%3A3&scaling=contain&page-id=0%3A1&starting-point-node-id=2%3A3">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">CherryGames</div>
+                                <p class="mb-0">Sitio Web para publicar y jugar videojuegos</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid " src="/public/assets/cherryganes/mini.png" alt="..." />
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <a class="portfolio-item"
+                        href="https://www.figma.com/proto/iZJWD9NS6x7vLBAooz4z0X/Test_UserFood?node-id=74%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=29%3A4&show-proto-sidebar=1">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">EATS Delivery</div>
+                                <p class="mb-0">Aplicación de pedidos de comida</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid " src="/public/assets/eatsdelivery/mini.png" alt="..." />
+                    </a>
+                </div>
+
+
             </div>
-        </footer>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="bi bi-caret-up-fill"></i></a>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    </section>
+
+
+    <div class="bgimg-2 darken"></div>
+    <!-- Footer-->
+    <!-- Footer-->
+    <footer class="footer text-center" id="contact" style="background-color: #141417">
+        <div class="container px-4 px-lg-5">
+            <ul class="list-inline mb-5">
+                <!-- Redes sociales-->
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="https://delphergames.itch.io/"><i
+                            class="bi bi-controller"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="https://github.com/Delpher57"><i
+                            class="icon-social-github"></i></a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; Delpher 2022</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/public/js/jquery-3.6.0.js"></script>
+
+
+
 </body>
 
 </html>
