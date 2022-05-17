@@ -211,30 +211,7 @@
 
     <div class="bgimg-2 darken"></div>
 
-    <script>
-        var folder = "public/assets/art/";
-        console.log(folder);
-        $.ajax({
-            url: folder,
-            success: function (data) {
-                $(data).find("a").attr("href", function (i, val) {
-                    if (val.match(/\.(jpe?g|png|gif)$/)) {
-                        $("#wall").append("<img src='" + val + "'>");
-                        console.log(val);
-                    }
-                });
-            }
-        });
 
-        $(document).ready(function () {
-            $.get(".", function (data) {
-                //$("#fileNames").append(data);
-                console.log(data);
-            });
-        })
-
-
-    </script>
 
     <section style="background-color:  #141417;">
 
@@ -246,6 +223,34 @@
             <div class="freewall" id="wall"></div>
         </div>
     </section>
+
+    <script>
+
+        function imgError(image) {
+            image.onerror = "";
+            image.style.display = 'none';
+            return true;
+        }
+
+        var folder = "public/assets/art/";
+
+
+        var str = "abcdefghijklmn";
+        for (var i = 0; i < str.length; i++) {
+            var val = "<img src='" + folder + str[i] + ".png" + "'onerror='imgError(this);'>";
+            $("#wall").append(val);
+            //console.log(val);
+
+            val = "<img src='" + folder + str[i] + ".gif" + "' onerror='imgError(this);' >";
+            $("#wall").append(val);
+            //console.log(val);
+
+            val = "<img src='" + folder + str[i] + ".jpg" + "'onerror='imgError(this);'>";
+            $("#wall").append(val);
+            //console.log(val);
+        }
+
+    </script>
 
     <script>
         $(function () {
