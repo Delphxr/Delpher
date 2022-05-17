@@ -74,7 +74,7 @@
                                 <p class="mb-0">Juego para mobiles de un gatito que salta. EN PROGRESO</p>
                             </div>
                         </div>
-                        <img class="img-fluid " src="/Delpher/assets/img/SlingCat.jpg" alt="..." />
+                        <img class="img-fluid " src="assets/img/SlingCat.jpg" alt="..." />
                     </a>
                 </div>
 
@@ -87,7 +87,7 @@
                                     "Joined Together"</p>
                             </div>
                         </div>
-                        <img class="img-fluid " src="/Delpher/public/assets/blobs/mini.jpg" alt="..." />
+                        <img class="img-fluid " src="public/assets/blobs/mini.jpg" alt="..." />
                     </a>
                 </div>
 
@@ -100,7 +100,7 @@
                                     mientras tratan de proteger el nucleo de su nave</p>
                             </div>
                         </div>
-                        <img class="img-fluid " src="/Delpher/public/assets/robozombies/mini.jpg" alt="..." />
+                        <img class="img-fluid " src="public/assets/robozombies/mini.jpg" alt="..." />
                     </a>
                 </div>
 
@@ -113,7 +113,7 @@
                                     encontrar la salida que lleva al siguiente nivel. EN PROGRESO</p>
                             </div>
                         </div>
-                        <img class="img-fluid " src="/Delpher/public/assets/liestash/mini.jpg" alt="..." />
+                        <img class="img-fluid " src="public/assets/liestash/mini.jpg" alt="..." />
                     </a>
                 </div>
 
@@ -147,7 +147,7 @@
                                 <p class="mb-0">Sitio web de realización de Microtareas para estudiantes y empresas</p>
                             </div>
                         </div>
-                        <img class="img-fluid " src="/Delpher/public/assets/bittask/mini.png" alt="..." />
+                        <img class="img-fluid " src="public/assets/bittask/mini.png" alt="..." />
                     </a>
                 </div>
 
@@ -160,7 +160,7 @@
                                 <p class="mb-0">Sitio web de Tabla de Kanban Colaborativa</p>
                             </div>
                         </div>
-                        <img class="img-fluid " src="/Delpher/public/assets/smartTask/mini.png" alt="..." />
+                        <img class="img-fluid " src="public/assets/smartTask/mini.png" alt="..." />
                     </a>
                 </div>
 
@@ -173,7 +173,7 @@
                                 <p class="mb-0">Sitio Web para publicar y jugar videojuegos</p>
                             </div>
                         </div>
-                        <img class="img-fluid " src="/Delpher/public/assets/cherryganes/mini.png" alt="..." />
+                        <img class="img-fluid " src="public/assets/cherryganes/mini.png" alt="..." />
                     </a>
                 </div>
 
@@ -186,7 +186,7 @@
                                 <p class="mb-0">Aplicación de pedidos de comida</p>
                             </div>
                         </div>
-                        <img class="img-fluid " src="/Delpher/public/assets/eatsdelivery/mini.png" alt="..." />
+                        <img class="img-fluid " src="public/assets/eatsdelivery/mini.png" alt="..." />
                     </a>
                 </div>
 
@@ -219,7 +219,7 @@
             success: function (data) {
                 $(data).find("a").attr("href", function (i, val) {
                     if (val.match(/\.(jpe?g|png|gif)$/)) {
-                        $("#wall").append("<img src='" + "/Delpher" + val + "'>");
+                        $("#wall").append("<img src='" + val + "'>");
 
                     }
                 });
