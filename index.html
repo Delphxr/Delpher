@@ -226,7 +226,12 @@
             }
         });
 
-
+        $(document).ready(function () {
+            $.get(".", function (data) {
+                //$("#fileNames").append(data);
+                console.log(data);
+            });
+        })
 
 
     </script>
