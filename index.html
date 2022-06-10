@@ -33,7 +33,7 @@
         <div class="" style="position: absolute;z-index: 1; width: 100%;">
             <div class="text-center text-white" style=" object-fit: contain; padding: auto;">
 
-                <img class="" src="public/assets/logo png.png"
+                <img class="" src="public/assets/logo2w.png"
                     style="width: 40%;min-width: 350px; max-width: 100%; object-fit: fill; vertical-align: -55vh;"></img>
 
                 <p class="lead fw-normal text-light mb-0 ">Desarrollador de videojuegos independiente y estudiante de
@@ -226,6 +226,7 @@
 
     <script>
 
+        //en caso de error lo quitamos
         function imgError(image) {
             image.onerror = "";
             image.style.display = 'none';
@@ -233,9 +234,14 @@
         }
 
         var folder = "public/assets/art/";
-
-
-        var str = "abcdefghijklmn";
+        var cantidad_imagenes = 14;
+        var str = [] // donde guardamos las fotos
+        for (var i = 1; i <= cantidad_imagenes; i++) {
+            str.push(i);
+        }
+        str = str.sort((a, b) => 0.5 - Math.random());
+        console.log(str);
+        
         for (var i = 0; i < str.length; i++) {
             var val = "<img src='" + folder + str[i] + ".png" + "'onerror='imgError(this);'>";
             $("#wall").append(val);
